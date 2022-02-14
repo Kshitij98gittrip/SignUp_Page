@@ -1,0 +1,47 @@
+<!-- Create a Signup page for taking input from the user such as Username, Password, etc. and a Submit button. The webpage should contain the following validations :
+* If user did not fill any field or put wrong length of password and clicked on the submit button, appropriate message should be displayed
+You have to design an interactive page having good CSS. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <form class="box" action="#" name="form_validate" onsubmit="return validate()" method="post">
+        <div>
+            <h1>Sign Up</h1>
+        </div>
+        <div class="element">
+            <input type="text" id="name" placeholder="Enter your Username" required/>
+            <span class="err1 err"></span>
+        </div>
+        <div class="element">
+            <input type="tel" id="phn" placeholder="Enter your mobile No." required/>
+            <span class="err2 err"><b></b></span>
+        </div>
+        <div class="element">
+            <input type="email" id="mail" placeholder="Enter your Email" required/>
+            <span class="err3 err"><b></b></span>
+        </div>
+        <div class="element">
+            <input type="password" id="pass" placeholder="Enter password(minimum length 8)" required/>
+            <span class="err4 err"><b></b></span>
+        </div>
+        <div class="element">
+            <input type="password" id="confirm" placeholder="Re-enter your password" required/>
+            <span class="err5 err"><b></b></span>
+        </div>
+        <button class="btnn">Submit</button>
+    </form>
+
+</body>
+<script src="validating_form.js"></script>
+
+</html>

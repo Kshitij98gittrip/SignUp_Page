@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(images/bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.box{
+    border: 2px solid black;
+    /* display: inline-block; */
+    align-items: center;
+    position: absolute;
+    top:20%;
+    left: 35%;
+    padding: 40px; 
+    width: 30%;
+    box-shadow: 3px 5px black;
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+/* CSS FOR FORM   */
+.box h1{
+    margin-bottom:22px ;
+    font-family: 'Lobster', cursive;
+}
+
+/* CSS FOR THE ELEMENTS IN THE FORM  */
+.element{
+    padding: 5px;
+    width: 100%;
+}
+
+/* CSS FOR INPUT TAG IN THE FORM  */
+.element input{
+    width: 79%;
+    padding: 10px;
+    border: 2px solid #6670a1;
+    border-radius: 9px;
+    box-shadow: 2px 4px rgb(34 122 98);
+    outline: none;
+    align-items: center;
+    display: block;
+    margin: auto auto;
+}
+/* CSS FOR BUTTON  */
+
+.btnn{
+    cursor: pointer;
+    padding: 9px 23px;
+    display: block;
+    margin:10px auto;
+    align-items: center;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+
+    
+}
+.btnn:hover{
+    background-color: #c7f7f7;
+
+}
+
+/* CSS FOR ERROR MESSAGE */
+.err{
+    color:red;
+    font-weight: bold;
+}
